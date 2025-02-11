@@ -138,9 +138,15 @@ body{
 
 .message-list{
     background-color: white;
-    width: 75%;
-    border-radius: 20px;
+    width: 80%;
+    min-width: 680px;
+    border-radius: 30px;
+    height: 90vh;
+    overflow-y: scroll;  
+    
 }
+
+ 
 
 .check-box{
     display: flex;
@@ -171,3 +177,84 @@ body{
     gap: 10px;
     margin-right: 20px;
 }
+
+.slugs{
+    display: flex;
+    align-items: center;
+    
+    /* border-bottom: 1px solid #B5B6B6; */
+}
+
+.routs{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.rout-1{
+    /* padding: 25px 0 5px 20px; */
+    /* border: 1px solid; */
+    height: 50px;
+    width: 250px;
+    margin-top: 20px ;
+    padding-left:20px;
+    cursor: pointer;
+
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    /* width: 220px; */
+    /* border: 1px solid; */
+}
+
+.new{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 8px;
+}
+
+.people{
+    font-size: 12px;
+    color: #B5B6B6;
+}
+
+.rout-1:hover{
+    background-color: #f8fafd;
+    ;
+    /* padding: 20px; */
+}
+
+.mail-left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* margin-top: 8px; */
+    /* padding-left: 20px; */
+    gap: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.my-mails{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ECEFF1;
+    border-top: 1px solid #ECEFF1;
+    height: 40px;
+    /* margin-top: 10px; */
+
+}
+
+.mail-right, .time{
+    font-size: 14px;
+
+}
+

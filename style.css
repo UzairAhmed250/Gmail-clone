@@ -139,7 +139,7 @@ body{
 .message-list{
     background-color: white;
     width: 80%;
-    min-width: 680px;
+    min-width: 580px;
     border-radius: 30px;
     height: 90vh;
     overflow-y: scroll;  
@@ -255,6 +255,79 @@ body{
 
 .mail-right, .time{
     font-size: 14px;
+    white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide any overflow */
+        text-overflow: ellipsis;
 
 }
 
+.name{
+    white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide any overflow */
+        text-overflow: ellipsis;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .message-list{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background-color: white;
+        width: 100%;
+        min-width: 800px;
+        border-radius: 30px;
+        height: 90vh;
+        overflow-y: scroll;     
+    }
+
+    .mail-left{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        /* margin-top: 8px; */
+        /* padding-left: 20px; */
+        gap: 5px;
+        margin-left: 12px;
+        font-weight: bold;
+        font-size: 12px; 
+    }
+    .mail-right{
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .message-list{
+        background-color: white;
+        width: 100%;
+        min-width: 800px;
+        border-radius: 30px;
+        height: 90vh;
+        overflow-y: scroll;  
+
+    }
+
+    .mail-left{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        /* margin-top: 8px; */
+        /* padding-left: 20px; */
+        gap: 12px;
+        margin-left: 12px;
+        font-weight: bold;
+        font-size: 14px; 
+        /* overflow: hidden; */
+    }
+    .mail-right{
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide any overflow */
+        text-overflow: ellipsis;
+    }
+
+}
